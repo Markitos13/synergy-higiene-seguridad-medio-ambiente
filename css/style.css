@@ -1,0 +1,649 @@
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.card-title {
+  font-size: 15px;
+  text-align: center; }
+
+/*main home*/
+.img-pr {
+  background-image: url(../img/pagina-principal.jpeg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .img-pr h2 {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    object-fit: cover;
+    padding: 20%; }
+    .img-pr h2 .amarillo {
+      color: yellow; }
+
+.card-title {
+  font-size: 15px;
+  text-align: center; }
+
+/*imagen presentación capacitaciones*/
+.img-cap {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+/*capacitaciones disponibles*/
+.card-title {
+  font-size: 15px;
+  text-align: center; }
+
+/*imagen fondo body medio ambiente*/
+.img-fondo {
+  background-image: url(../img/principal-medio-ambiente.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.img-ma h2 {
+  font-family: 'Caprasimo', cursive;
+  color: #0d490d;
+  font-style: oblique;
+  text-align: end;
+  text-transform: uppercase;
+  object-fit: cover;
+  padding: 10%;
+  display: grid; }
+
+/*main medio ambiente*/
+.contenedorambiente {
+  padding-top: 3rem;
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: 3fr;
+  row-gap: 20px; }
+
+.card-title {
+  font-size: 15px;
+  text-align: center; }
+
+/*main contactos*/
+.img-ct {
+  background-image: url(../img/principal-contactos.jpeg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .img-ct .contactopr {
+    font-style: oblique;
+    color: black;
+    font-size: 40px;
+    object-fit: cover;
+    padding: 20%; }
+    .img-ct .contactopr .rojo {
+      color: red; }
+
+.card-title {
+  font-size: 15px;
+  text-align: center; }
+
+/*main nosotros*/
+.img-nt {
+  background-size: cover;
+  background-attachment: fixed; }
+
+.card-title {
+  font-size: 15px;
+  text-align: center; }
+
+/*main oportunidades*/
+.img-op {
+  background-image: url(../img/nosotros-trabajo.png);
+  background-size: cover;
+  background-attachment: fixed; }
+  .img-op .oportunidadespr {
+    font-size: 30px;
+    font-style: oblique;
+    color: white;
+    object-fit: cover;
+    text-align: end;
+    padding: 20%;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.card-title {
+  font-size: 15px;
+  text-align: center; }
+
+/*main servicios*/
+.img-sv {
+  background-image: url(../img/servicios.jpeg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .img-sv .serviciospr {
+    font-style: oblique;
+    object-fit: cover;
+    text-align: end;
+    color: white;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20%; }
+
+/*estilos de pantalla para celulares*/
+/*html home*/
+/*estilos de pantalla para tablet*/
+/*html home*/
+/*estilos de pantalla para notebook*/
+/*html home*/
+/*estilos extend boton wsp*/
+.btn-wsp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  border-radius: 70px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0px 1px 10px white;
+  z-index: 100px; }
+
+/*estilos de header*/
+/*menu de todos los html*/
+header {
+  align-items: center;
+  gap: 10px;
+  background-color: teal;
+  display: flex;
+  justify-content: space-between; }
+  header h1 {
+    font-size: 25px;
+    padding: 20px; }
+    header h1 a {
+      color: white;
+      text-decoration: none; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      display: inline-block;
+      margin: 0px; }
+
+/*main de todos los html*/
+/*boton de wsp*/
+.btn-wsp {
+  background-image: url(../img/whatsapp-icono.png);
+  background-color: green; }
+  .btn-wsp :hover {
+    text-decoration: none; }
+
+/*estilos de footer*/
+/*de todos los html*/
+footer {
+  display: flex;
+  margin-top: 0rem;
+  background-color: teal; }
+  footer .comunidad {
+    color: #b9f0ed;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+    footer .comunidad .textofooter {
+      font-size: 20px; }
+    footer .comunidad .derechosfooter {
+      font-size: 10px; }
+
+/*estilos de main para celulares*/
+.contenedor {
+  background-color: #f5ebe0;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px; }
+  .contenedor .card {
+    border: white;
+    background-color: #f0e0cd; }
+  .contenedor .registro {
+    width: 400px;
+    background-color: teal;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    object-fit: cover; }
+    .contenedor .registro h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center; }
+    .contenedor .registro .completar {
+      width: 100%;
+      background-color: white;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid teal;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px; }
+    .contenedor .registro .mensaje {
+      width: 100%;
+      background-color: white;
+      padding: 50px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid teal;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 18px;
+      text-align: center; }
+
+/*estilos para pantallas de celulares*/
+@media screen and (max-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /*html contacto*/
+    /*html nosotros*/
+    /*html oportunidades*/
+    /*html servicios*/
+    /*html capacitaciones*/ }
+    .contenedor .card {
+      margin-left: 40px; }
+    .contenedor .img-pr {
+      grid-column: span 1;
+      height: 100%; }
+      .contenedor .img-pr h2 {
+        font-size: 25px; }
+    .contenedor .img-ct {
+      grid-column: span 1;
+      height: 100%; }
+      .contenedor .img-ct h2 {
+        font-size: 25px; }
+    .contenedor .img-nt {
+      grid-column: span 1;
+      height: 100%; }
+    .contenedor .img-op {
+      grid-column: span 1;
+      height: 100%; }
+    .contenedor .img-sv {
+      grid-column: span 1;
+      height: 100%; }
+    .contenedor .img-cap {
+      grid-column: span 1;
+      height: 100%; }
+      .contenedor .img-cap .wrapper {
+        row-gap: 50px;
+        grid-template-columns: span 1;
+        display: grid;
+        margin-top: 50px;
+        margin: 100px; }
+        .contenedor .img-cap .wrapper .capacitacionestipos {
+          width: 150px;
+          height: 200px;
+          padding: 2rem 1rem;
+          background-color: #fff;
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+          box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+          transition: 0.5s ease-in-out;
+          border-radius: 20px; }
+          .contenedor .img-cap .wrapper .capacitacionestipos .capa {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 20px; }
+          .contenedor .img-cap .wrapper .capacitacionestipos .info {
+            position: relative;
+            z-index: 3;
+            color: #fff;
+            opacity: 1;
+            transform: translateY(30px);
+            transition: 0.5s all; }
+            .contenedor .img-cap .wrapper .capacitacionestipos .info h2 {
+              margin: 0px; }
+            .contenedor .img-cap .wrapper .capacitacionestipos .info p {
+              letter-spacing: 1px;
+              font-size: 5px;
+              margin-top: 5px;
+              margin-bottom: 20px; }
+            .contenedor .img-cap .wrapper .capacitacionestipos .info .btn {
+              text-decoration: none;
+              padding: 0.5rem 1rem;
+              background: #0e06f4;
+              color: #f9f9f9;
+              font-size: 14px;
+              font-weight: bold;
+              cursor: pointer;
+              transition: 0.4s ease-in-out; }
+              .contenedor .img-cap .wrapper .capacitacionestipos .info .btn :hover {
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
+          .contenedor .img-cap .wrapper .capacitacionestipos :hover.info {
+            background: linear-gradient(red, blue);
+            border-radius: 10px;
+            opacity: 1;
+            transform: translateY(0px); } }
+
+/*estilos para pantallas de tablet*/
+@media screen and (min-width: 600px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /*html contacto*/
+    /*html nosotros*/
+    /*html oportunidades*/
+    /*html servicios*/
+    /*html medio ambiente*/ }
+    .contenedor .card {
+      margin-left: 20px; }
+    .contenedor .img-pr {
+      grid-column: span 2;
+      height: 500px; }
+      .contenedor .img-pr h2 {
+        font-size: 40px; }
+    .contenedor .img-ct {
+      grid-column: span 2;
+      height: 100%; }
+      .contenedor .img-ct h2 {
+        font-size: 30px; }
+    .contenedor .img-nt {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedor .img-op {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedor .img-sv {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedor .img-ma {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedor .img-cap {
+      grid-column: span 2;
+      height: 100%; }
+      .contenedor .img-cap .wrapper {
+        row-gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 10%;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+        column-gap: 100px; }
+      .contenedor .img-cap .capacitacionestipos {
+        width: 200px;
+        height: 360px;
+        padding: 2rem 1rem;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+        border-radius: 20px; }
+        .contenedor .img-cap .capacitacionestipos .capa {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 20px; }
+        .contenedor .img-cap .capacitacionestipos .info {
+          position: relative;
+          z-index: 3;
+          color: #fff;
+          opacity: 1;
+          transform: translateY(30px);
+          transition: 0.5s all; }
+          .contenedor .img-cap .capacitacionestipos .info h2 {
+            margin: 0px; }
+          .contenedor .img-cap .capacitacionestipos .info p {
+            letter-spacing: 0.5px;
+            font-size: 5px;
+            margin-top: 8px;
+            margin-bottom: 20px; }
+          .contenedor .img-cap .capacitacionestipos .info .btn {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #2404f9;
+            color: #fef9f9;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s ease-in-out; }
+            .contenedor .img-cap .capacitacionestipos .info .btn :hover {
+              box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
+        .contenedor .img-cap .capacitacionestipos :hover.info {
+          background: linear-gradient(red, blue);
+          border-radius: 10px;
+          opacity: 1;
+          transform: translateY(0px); } }
+
+/*estilos para pantallas de notebook*/
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /*html contacto*/
+    /*formulario contacto centrado*/
+    /*html nosotros*/
+    /*html oportunidades*/
+    /*html servicios*/ }
+    .contenedor .card {
+      margin-left: 5px; }
+    .contenedor .img-pr {
+      grid-column: span 4;
+      height: 100%; }
+      .contenedor .img-pr h2 {
+        font-size: 50px; }
+    .contenedor .img-ct {
+      grid-column: span 4;
+      height: 100%; }
+      .contenedor .img-ct h2 {
+        font-size: 30px; }
+    .contenedor .registro {
+      margin-left: 400px; }
+    .contenedor .img-nt {
+      grid-column: span 4;
+      height: 50%; }
+    .contenedor .img-op {
+      grid-column: span 4;
+      height: 100%; }
+    .contenedor .img-sv {
+      grid-column: span 4;
+      height: 100%; }
+    .contenedor .img-cap {
+      grid-column: span 4;
+      height: 100%; }
+      .contenedor .img-cap .wrapper {
+        display: flex;
+        width: 10%;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+        column-gap: 100px; }
+      .contenedor .img-cap .capacitacionestipos {
+        width: 400px;
+        height: 360px;
+        padding: 2rem 1rem;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+        border-radius: 20px; }
+        .contenedor .img-cap .capacitacionestipos .capa {
+          width: 250px;
+          height: 360px;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 20px; }
+        .contenedor .img-cap .capacitacionestipos .info {
+          position: relative;
+          z-index: 3;
+          color: #fff;
+          opacity: 1;
+          transform: translateY(30px);
+          transition: 0.5s all; }
+          .contenedor .img-cap .capacitacionestipos .info h2 {
+            margin: 0px; }
+          .contenedor .img-cap .capacitacionestipos .info p {
+            letter-spacing: 0.5px;
+            font-size: 5px;
+            margin-top: 8px;
+            margin-bottom: 20px; }
+          .contenedor .img-cap .capacitacionestipos .info .btn {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #2404f9;
+            color: #fef9f9;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s ease-in-out; }
+            .contenedor .img-cap .capacitacionestipos .info .btn :hover {
+              box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
+        .contenedor .img-cap .capacitacionestipos :hover.info {
+          background: linear-gradient(red, blue);
+          border-radius: 10px;
+          opacity: 1;
+          transform: translateY(0px); } }
+
+/*estilos para pantallas de celulares*/
+@media screen and (max-width: 600px) {
+  .img-ma {
+    /*html medio ambiente*/ }
+    .img-ma .img-ma {
+      grid-template-columns: repeat(1, 1fr);
+      height: 100%; }
+      .img-ma .img-ma h2 {
+        font-size: 5px; } }
+
+@media screen and (max-width: 600px) {
+  .contenedorambiente {
+    /*html medio ambiente*/ }
+    .contenedorambiente .img-ma {
+      grid-template-columns: repeat(1, 1fr);
+      height: 100%; }
+      .contenedorambiente .img-ma h2 {
+        font-size: 5px; } }
+
+/*estilos para pantallas de tablet*/
+@media screen and (min-width: 600px) {
+  .contenedorambiente {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    /*html contacto*/
+    /*html nosotros*/
+    /*html oportunidades*/
+    /*html servicios*/
+    /*html medio ambiente*/ }
+    .contenedorambiente .card {
+      margin-left: 20px; }
+    .contenedorambiente .img-pr {
+      grid-column: span 2;
+      height: 500px; }
+      .contenedorambiente .img-pr h2 {
+        font-size: 40px; }
+    .contenedorambiente .img-ct {
+      grid-column: span 2;
+      height: 100%; }
+      .contenedorambiente .img-ct h2 {
+        font-size: 30px; }
+    .contenedorambiente .img-nt {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedorambiente .img-op {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedorambiente .img-sv {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedorambiente .img-ma {
+      grid-column: span 2;
+      height: 100%; }
+    .contenedorambiente .img-cap {
+      grid-column: span 2;
+      height: 100%; }
+      .contenedorambiente .img-cap .wrapper {
+        row-gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 10%;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+        column-gap: 100px; }
+      .contenedorambiente .img-cap .capacitacionestipos {
+        width: 200px;
+        height: 360px;
+        padding: 2rem 1rem;
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-in-out;
+        border-radius: 20px; }
+        .contenedorambiente .img-cap .capacitacionestipos .capa {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 20px; }
+        .contenedorambiente .img-cap .capacitacionestipos .info {
+          position: relative;
+          z-index: 3;
+          color: #fff;
+          opacity: 1;
+          transform: translateY(30px);
+          transition: 0.5s all; }
+          .contenedorambiente .img-cap .capacitacionestipos .info h2 {
+            margin: 0px; }
+          .contenedorambiente .img-cap .capacitacionestipos .info p {
+            letter-spacing: 0.5px;
+            font-size: 5px;
+            margin-top: 8px;
+            margin-bottom: 20px; }
+          .contenedorambiente .img-cap .capacitacionestipos .info .btn {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background: #2404f9;
+            color: #fef9f9;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.4s ease-in-out; }
+            .contenedorambiente .img-cap .capacitacionestipos .info .btn :hover {
+              box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); }
+        .contenedorambiente .img-cap .capacitacionestipos :hover.info {
+          background: linear-gradient(red, blue);
+          border-radius: 10px;
+          opacity: 1;
+          transform: translateY(0px); } }
+
+/*estilos para pantallas de notebook*/
+@media screen and (min-width: 1024px) {
+  .contenedorambiente {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-left: 300px; }
+    .contenedorambiente .img-ma {
+      grid-column: span 4;
+      height: 100%; }
+      .contenedorambiente .img-ma h2 {
+        font-size: 25px; } }

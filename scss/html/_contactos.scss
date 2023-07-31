@@ -1,0 +1,31 @@
+//importar archivos secundarios de sass
+
+@import "../utilidades/variables";
+
+
+
+
+//main contacto
+/*main contactos*/
+.img-ct{
+    background-image: url(../img/principal-contactos.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    .contactopr{
+        font-style: oblique;
+        color: $color-general;
+        font-size: 40px;
+        object-fit: cover;
+        padding: 20%;
+        .rojo{
+            color: $color-ti;
+        
+        }
+
+        
+
+    }
+   
+   
+}
+

@@ -1,0 +1,452 @@
+//mixin
+
+/*estilos de pantalla para celulares*/
+/*html home*/
+@mixin celular{
+    @media screen and (max-width:600px){
+        grid-template-columns: repeat(1, 1fr);
+        column-gap:10px;
+        row-gap: 10px;
+        .card{
+            margin-left: 40px;
+        }
+       
+        .img-pr{
+            grid-column: span 1;
+            height: 100%;
+            h2{
+                font-size: 25px;
+                
+            }
+      
+        }
+
+        /*html contacto*/
+        .img-ct{ 
+            grid-column: span 1;
+            height: 100%;
+            h2{
+                font-size: 25px;
+            }
+            
+        }
+        /*html nosotros*/
+        .img-nt{
+            grid-column: span 1;
+            height: 100%;
+
+        }
+
+       
+
+        /*html oportunidades*/
+        .img-op{
+            grid-column: span 1;
+            height: 100%;
+        }
+       
+
+        /*html servicios*/
+        .img-sv{
+            grid-column: span 1;
+            height: 100%;
+        }
+       /*html capacitaciones*/
+       .img-cap{
+        grid-column: span 1;
+        height: 100%;
+        .wrapper{
+            row-gap: 50px;
+            grid-template-columns: span 1;
+            display: grid;
+            margin-top: 50px;
+            margin: 100px;
+            .capacitacionestipos{
+                width: 150px;
+                height: 200px;
+                padding: 2rem 1rem;
+                background-color: #fff;
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5,);
+                transition: 0.5s ease-in-out;
+                border-radius: 20px;
+                .capa{
+                    width: 150px;
+                    height: 200px;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 20px;
+            
+                }
+            
+                .info{
+                    position: relative;
+                    z-index: 3;
+                    color: #fff;
+                    opacity: 1;
+                    transform: translateY(30px);
+                    transition: 0.5s all;
+                    h2{
+                        margin: 0px;
+                    }
+            
+                    p{
+                        letter-spacing: 1px;
+                        font-size: 5px;
+                        margin-top: 5px;
+                        margin-bottom: 20px;
+                    }
+            
+                    .btn{
+                        text-decoration: none;
+                        padding: 0.5rem 1rem;
+                        background: #0e06f4;
+                        color: #f9f9f9;
+                        font-size: 14px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: 0.4s ease-in-out;
+                        :hover{
+                            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5,);
+            
+                        }
+                    }
+                }
+            
+                :hover.info{
+                    background: linear-gradient(red, blue);
+                    border-radius: 10px;
+                    opacity: 1;
+                    transform: translateY(0px);
+                   
+            
+                }
+
+                }
+            
+            
+
+        }
+      
+    }
+     
+
+}
+}
+ 
+/*estilos de pantalla para tablet*/
+/*html home*/
+@mixin tablet{
+    @media screen and (min-width:600px){
+        grid-template-columns: repeat(2, 1fr);
+        column-gap:10px;
+        row-gap: 10px;
+        .card{
+            margin-left: 20px;
+        }
+        .img-pr{
+            grid-column: span 2;
+            height: 500px;
+            h2{
+                font-size: 40px;
+            }
+        }
+
+        /*html contacto*/
+        .img-ct{ 
+            grid-column: span 2;
+            height: 100%;
+            
+            h2{
+                
+                font-size: 30px;
+            }
+            
+        }
+        /*html nosotros*/
+        .img-nt{
+            grid-column: span 2;
+            height: 100%;
+        }
+
+        /*html oportunidades*/
+        .img-op{
+            grid-column: span 2;
+            height: 100%;
+        }
+
+        /*html servicios*/
+        .img-sv{
+            grid-column: span 2;
+            height: 100%;
+        }
+         /*html medio ambiente*/
+         .img-ma{
+            grid-column: span 2;
+            height: 100%;
+        }
+        .img-cap{
+            grid-column: span 2;
+            height: 100%;
+
+            .wrapper{
+                row-gap: 50px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                width: 10%;
+                justify-content: space-around;
+                margin:auto;
+                margin-top: 50px;
+                column-gap: 100px;
+                 }
+            
+            .capacitacionestipos{
+                width: 200px;
+                height: 360px;
+                padding: 2rem 1rem;
+                background-color: #fff;
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5,);
+                transition: 0.5s ease-in-out;
+                border-radius: 20px;
+                .capa{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 20px;               
+            
+                     }
+            
+                .info{
+                    position: relative;
+                    z-index: 3;
+                    color: #fff;
+                    opacity: 1;
+                    transform: translateY(30px);
+                    transition: 0.5s all;
+                       h2{
+                        margin: 0px;
+                         }
+            
+                        p{
+                        letter-spacing: 0.5px;
+                        font-size: 5px;
+                        margin-top: 8px;
+                        margin-bottom: 20px;
+                         }
+            
+                       .btn{
+                        text-decoration: none;
+                        padding: 0.5rem 1rem;
+                        background: #2404f9;
+                        color: #fef9f9;
+                        font-size: 15px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: 0.4s ease-in-out;
+                        :hover{
+                            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5,);
+            
+                              }
+                           }
+                     }
+            
+                :hover.info{
+                    background: linear-gradient(red, blue);
+                    border-radius: 10px;
+                    opacity: 1;
+                    transform: translateY(0px);
+                           }
+        
+
+                           }
+
+        }
+
+    }
+}
+
+/*estilos de pantalla para notebook*/
+/*html home*/
+
+@mixin notebook{
+    @media screen and (min-width:1024px){
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap:10px;
+        row-gap: 10px;
+        .card{
+            margin-left: 5px;
+             }
+        .img-pr{
+            grid-column: span 4;
+            height: 100%;
+               h2{
+                font-size: 50px;
+                 }
+               }
+         /*html contacto*/
+         .img-ct{ 
+            grid-column: span 4;
+            height: 100%;
+               h2{
+                font-size: 30px;
+                 }
+                }
+            /*formulario contacto centrado*/
+            .registro{
+                margin-left: 400px;
+                     }
+
+             /*html nosotros*/
+        .img-nt{
+            grid-column: span 4;
+            height: 50%;
+               }
+
+        /*html oportunidades*/
+        .img-op{
+            grid-column: span 4;
+            height: 100%;    
+            
+               }
+
+        /*html servicios*/
+        .img-sv{
+            grid-column: span 4;
+            height: 100%;
+               }
+        .img-cap{
+            grid-column: span 4;
+            height: 100%;
+
+            .wrapper{
+                display: flex;
+                width: 10%;
+                justify-content: space-around;
+                margin:auto;
+                margin-top: 50px;
+                column-gap: 100px;
+                 }
+            
+            .capacitacionestipos{
+                width: 400px;
+                height: 360px;
+                padding: 2rem 1rem;
+                background-color: #fff;
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5,);
+                transition: 0.5s ease-in-out;
+                border-radius: 20px;
+                .capa{
+                    width: 250px;
+                    height: 360px;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 20px;               
+            
+                     }
+            
+                .info{
+                    position: relative;
+                    z-index: 3;
+                    color: #fff;
+                    opacity: 1;
+                    transform: translateY(30px);
+                    transition: 0.5s all;
+                       h2{
+                        margin: 0px;
+                         }
+            
+                        p{
+                        letter-spacing: 0.5px;
+                        font-size: 5px;
+                        margin-top: 8px;
+                        margin-bottom: 20px;
+                         }
+            
+                       .btn{
+                        text-decoration: none;
+                        padding: 0.5rem 1rem;
+                        background: #2404f9;
+                        color: #fef9f9;
+                        font-size: 15px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: 0.4s ease-in-out;
+                        :hover{
+                            box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5,);
+            
+                              }
+                           }
+                     }
+            
+                :hover.info{
+                    background: linear-gradient(red, blue);
+                    border-radius: 10px;
+                    opacity: 1;
+                    transform: translateY(0px);
+                           }
+
+                }
+            }
+        }
+
+            }
+
+        
+        
+        @mixin notebookambiente{
+            @media screen and (min-width:1024px){
+                grid-template-columns: repeat(3, 1fr);
+                column-gap:10px;
+                row-gap: 10px;
+                padding-left: 300px;
+                .img-ma{
+                    grid-column: span 4;
+                    height: 100%;
+                          h2{
+                               font-size: 25px; 
+                            }
+
+                        }
+    
+            
+                     }
+                  }
+
+                @mixin celularambiente{
+                    @media screen and (max-width:600px){
+                        /*html medio ambiente*/
+                .img-ma{
+                        grid-template-columns: repeat(1, 1fr);
+                        height: 100%;
+                            h2{
+                                font-size: 5px; 
+                            }
+
+                         }
+
+                        }
+                 }
+           
+        
+
+    
+        
+                
+        
+

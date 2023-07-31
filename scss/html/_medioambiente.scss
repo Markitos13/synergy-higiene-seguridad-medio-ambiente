@@ -1,0 +1,45 @@
+//importar archivos secundarios de sass
+
+@import "../utilidades/variables";
+
+
+// imagn fondo body
+/*imagen fondo body medio ambiente*/
+.img-fondo{
+    background-image: url(../img/principal-medio-ambiente.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+// header medio ambiente
+
+.img-ma{
+
+    h2{
+        font-family: 'Caprasimo', cursive;
+        color: rgb(13, 73, 13);
+        font-style: oblique;
+        text-align: end;
+        text-transform: uppercase;
+        object-fit: cover;
+        padding: 10%;
+        display: grid;
+    }
+
+
+}
+
+
+//main medio ambiente
+/*main medio ambiente*/
+
+
+.contenedorambiente{
+    padding-top: 3rem;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 3fr;
+    row-gap: 20px;
+   
+
+   }

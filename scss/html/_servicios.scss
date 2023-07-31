@@ -1,0 +1,22 @@
+//importar archivos secundarios de sass
+
+@import "../utilidades/variables";
+
+//main servicios
+/*main servicios*/
+
+.img-sv{
+    background-image: url(../img/servicios.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .serviciospr{
+        font-style: oblique;
+        object-fit: cover;
+        text-align: end;
+        color: $color-empresa;
+        font-size: 35px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 20%;
+    }
+}

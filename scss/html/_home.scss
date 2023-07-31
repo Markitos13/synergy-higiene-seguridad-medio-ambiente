@@ -1,0 +1,27 @@
+//importar archivos secundarios de sass
+
+@import "../utilidades/variables";
+
+
+
+//main home
+/*main home*/
+
+.img-pr{
+    background-image: url(../img/pagina-principal.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    h2{
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        object-fit: cover;
+        padding: 20%;
+        .amarillo{
+            color: $color-banner;
+        }
+    }
+  
+}
+
+
